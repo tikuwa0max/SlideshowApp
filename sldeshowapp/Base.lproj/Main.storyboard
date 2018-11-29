@@ -35,22 +35,34 @@
                                     <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kjR-MN-PMh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fc-h8-SBn">
+                                <rect key="frame" x="172" y="627" width="31" height="30"/>
+                                <state key="normal" title="再生"/>
+                                <connections>
+                                    <action selector="startstop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezd-2j-b4Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="3Fc-h8-SBn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3gg-f5-5BU"/>
                             <constraint firstItem="Wby-Mw-tEp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4LA-LQ-pb6"/>
                             <constraint firstItem="gZ8-GG-vi2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AoN-CG-QGG"/>
                             <constraint firstItem="gZ8-GG-vi2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Esq-jV-wMx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wby-Mw-tEp" secondAttribute="bottom" constant="10" id="Ura-R2-JnZ"/>
                             <constraint firstItem="gZ8-GG-vi2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bqJ-wF-3g2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gZ8-GG-vi2" secondAttribute="bottom" constant="50" id="hlz-Lx-AF4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Fc-h8-SBn" secondAttribute="bottom" constant="10" id="jLg-Am-roC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="56K-z8-xpJ" secondAttribute="bottom" constant="10" id="kuT-Ql-Hb6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="56K-z8-xpJ" secondAttribute="trailing" constant="20" id="tqb-bf-uB1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="backbutton" destination="56K-z8-xpJ" id="rnD-fk-A7C"/>
+                        <outlet property="button" destination="3Fc-h8-SBn" id="IAD-lF-2vu"/>
                         <outlet property="imageboard" destination="gZ8-GG-vi2" id="CED-du-Iw7"/>
+                        <outlet property="nextbutton" destination="Wby-Mw-tEp" id="tSu-8A-n6l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
