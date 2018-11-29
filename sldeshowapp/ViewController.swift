@@ -57,8 +57,15 @@ class ViewController: UIViewController {
             nextbutton.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
             backbutton.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
             }
-        
     }
+    
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            // segueから遷移先のzoomViewControllerを取得する
+            let zoomViewController:zoomViewController = segue.destination as! zoomViewController
+            // 遷移先のzoomViewControllerで宣言しているx, countに代入して渡す
+            zoomViewController.count = count
+        }
+    
     @objc func autochange(_ timer: Timer){
         count += 1
         if count == 3{
