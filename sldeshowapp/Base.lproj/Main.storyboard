@@ -42,9 +42,6 @@
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gZ8-GG-vi2">
                                 <rect key="frame" x="30" y="120" width="315" height="497"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="6cw-Xo-DBr"/>
-                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="sAK-AX-SRa" appends="YES" id="lsO-SY-q7c"/>
                                 </connections>

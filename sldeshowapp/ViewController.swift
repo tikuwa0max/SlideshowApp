@@ -46,6 +46,8 @@ class ViewController: UIViewController {
         if self.timer == nil {
             self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(autochange(_:)), userInfo: nil, repeats: true)
             button.setTitle("一時停止", for: .normal)
+            nextbutton.isEnabled = false
+            backbutton.isEnabled = false
             nextbutton.backgroundColor = UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.2)
             backbutton.backgroundColor = UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.2)
             }
@@ -54,6 +56,8 @@ class ViewController: UIViewController {
             self.timer.invalidate()
             self.timer = nil
             button.setTitle("再生", for: .normal)
+            nextbutton.isEnabled = true
+            backbutton.isEnabled = true
             nextbutton.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
             backbutton.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
             }
@@ -79,6 +83,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     imageboard.image = imgs[count]
         
+ 
     }
 
     override func didReceiveMemoryWarning() {
