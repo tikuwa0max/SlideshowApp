@@ -9,8 +9,10 @@
 import UIKit
 
 class zoomViewController: UIViewController {
-
+ 
+    
     @IBOutlet weak var imageboard2: UIImageView!
+    
     var count = 0
     var imgs = [UIImage(named:"IMG_1298.jpg"),UIImage(named:"IMG_1302.jpg"),UIImage(named:"IMG_1305.jpg")]
     
@@ -20,13 +22,32 @@ class zoomViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         imageboard2.image = imgs[count]
         
+        
+
+
+        
+
+
+        
+    
+   
+     
+        
+        
+        
+        
+ 
         // Do any additional setup after loading the view.
     }
     
+    
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // segueから遷移先のViewControllerを取得する
+        // segueから遷移先_ViewControllerを取得する
         let ViewController:ViewController = segue.destination as! ViewController
         // 遷移先のzoomViewControllerで宣言しているx, countに代入して渡す
         ViewController.count = count

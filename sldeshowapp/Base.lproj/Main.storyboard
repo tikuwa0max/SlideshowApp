@@ -18,13 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gZ8-GG-vi2">
-                                <rect key="frame" x="0.0" y="20" width="375" height="597"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="sAK-AX-SRa" appends="YES" id="lsO-SY-q7c"/>
-                                </connections>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wby-Mw-tEp">
                                 <rect key="frame" x="20" y="627" width="31" height="30"/>
                                 <state key="normal" title="進む"/>
@@ -46,18 +39,28 @@
                                     <action selector="startstop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezd-2j-b4Y"/>
                                 </connections>
                             </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gZ8-GG-vi2">
+                                <rect key="frame" x="30" y="120" width="315" height="497"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="6cw-Xo-DBr"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sAK-AX-SRa" appends="YES" id="lsO-SY-q7c"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Wby-Mw-tEp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0Qs-b1-8aO"/>
                             <constraint firstItem="3Fc-h8-SBn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3gg-f5-5BU"/>
-                            <constraint firstItem="Wby-Mw-tEp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4LA-LQ-pb6"/>
-                            <constraint firstItem="gZ8-GG-vi2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AoN-CG-QGG"/>
-                            <constraint firstItem="gZ8-GG-vi2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Esq-jV-wMx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wby-Mw-tEp" secondAttribute="bottom" constant="10" id="Ura-R2-JnZ"/>
-                            <constraint firstItem="gZ8-GG-vi2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bqJ-wF-3g2"/>
+                            <constraint firstItem="gZ8-GG-vi2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ay1-kW-X4V"/>
+                            <constraint firstItem="gZ8-GG-vi2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="eo2-1A-lYl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gZ8-GG-vi2" secondAttribute="bottom" constant="50" id="hlz-Lx-AF4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Fc-h8-SBn" secondAttribute="bottom" constant="10" id="jLg-Am-roC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="56K-z8-xpJ" secondAttribute="bottom" constant="10" id="kuT-Ql-Hb6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gZ8-GG-vi2" secondAttribute="trailing" constant="30" id="pIl-Wz-bI9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="56K-z8-xpJ" secondAttribute="trailing" constant="20" id="tqb-bf-uB1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
