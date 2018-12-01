@@ -91,7 +91,7 @@
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="back2:" destination="dEE-E9-BXD" eventType="touchUpInside" id="D9q-3i-FrE"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Dko-H1-NiG"/>
+                                    <segue destination="0cW-md-uG1" kind="unwind" unwindAction="unwind:" id="jIh-8F-mij"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xjp-29-Ty0">
@@ -114,6 +114,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mrN-kC-mzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="0cW-md-uG1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="885.60000000000002" y="133.5832083958021"/>
         </scene>

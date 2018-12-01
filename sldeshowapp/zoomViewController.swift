@@ -51,6 +51,8 @@ class zoomViewController: UIViewController {
         let ViewController:ViewController = segue.destination as! ViewController
         // 遷移先のzoomViewControllerで宣言しているx, countに代入して渡す
         ViewController.count = count
+        
+      
     }
     
 
